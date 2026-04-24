@@ -6,7 +6,7 @@
   <body style="
     height: 3000px;">
     
-   <div style="
+   <div class=".js-header" style="
      position: fixed;
      top: 0px;
      right: 0px;
@@ -35,6 +35,7 @@
 
     <script>
       const button  = document.querySelector("button");
+      const header = document.querySelector(".js-header");
 
       function random(number) {
         return Math.floor(Math.random() * (number +1));
@@ -43,6 +44,7 @@
       button.addEventListener("click", () => {
        const randomColor = `rgb(${random(255)} ${random(255)} ${random(255)})`;
         document.body.style.backgroundColor = randomColor;
+        header.style.borderColor = randomColor;
       });
       
     </script>
