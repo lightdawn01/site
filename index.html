@@ -42,9 +42,10 @@
       }
 
       button.addEventListener("click", () => {
-       const randomColor = `rgb(${random(255)} ${random(255)} ${random(255)})`;
-        document.body.style.backgroundColor = randomColor;
-        header.style.backgroundColor = randomColor;
+       const randomColorBody = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+        const randomColorHeader = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+        document.body.style.backgroundColor = randomColorBody;
+        header.style.backgroundColor = randomColorHeader;
       });
       
     </script>
