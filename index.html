@@ -22,7 +22,7 @@
 
      RAWRRR
     
-    <div class="js-close-button" style="
+    <button class="js-close-button" style="
       background-color: pink;
       position: absolute;
       right: 0px;
@@ -30,10 +30,22 @@
       
       x
       
-    </div>
+    </button>
       </div>
 
     <script>
+      const button  = document.querySelector("button");
+
+      function randomNumber {
+      
+        return Math.floor(Math.random() * (number +1));
+      }
+
+      button.addEventListener("click", () => {
+       const = randomColor = `rgb(${random(255)} ${random(255)} ${random(255)}`;
+        document.body.style.backgroundColor = randomColor;
+
+      }
       
     </script>
     
